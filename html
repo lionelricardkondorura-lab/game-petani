@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Petani</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🌾 FARMING SIMULATOR 🌾</h1>
+            <div class="stats">
+                <div class="stat-item">💰 <span id="money">1000</span></div>
+                <div class="stat-item">🌱 <span id="crops">0</span></div>
+                <div class="stat-item">⏰ Hari: <span id="day">1</span></div>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="farm-field" id="farm-field"></div>
+        </div>
+
+        <div class="controls">
+            <button id="plant-btn" class="btn btn-primary">🌱 Tanam (100💰)</button>
+            <button id="water-btn" class="btn btn-secondary">💧 Siram (25💰)</button>
+            <button id="harvest-btn" class="btn btn-success">🌾 Panen</button>
+            <button id="sell-btn" class="btn btn-warning">💵 Jual (10💰/buah)</button>
+            <button id="next-day-btn" class="btn btn-info">⏭️ Hari Berikutnya</button>
+        </div>
+
+        <div class="info-panel">
+            <h3>Informasi Tanaman:</h3>
+            <p id="info-text">Pilih lahan untuk melihat informasi</p>
+        </div>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
